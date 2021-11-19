@@ -1,11 +1,14 @@
-import React from 'react'
-
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faUser} from '@fortawesome/free-solid-svg-icons'
+import "../App.css"
 function Student() {
-    return (
-        <div>
-           <span><i class="fad fa-user-graduate"></i></span> 
-        </div>
-    )
+  return (
+    <div>
+        <FontAwesomeIcon icon={faUser} className="student-icon" />
+        <h2 className="student-head">Student</h2>
+    </div>
+  );
 }
 
-export default Student
+export default Student;
