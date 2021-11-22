@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Studentlogin() {
+function User() {
     return (
         <div>
             <h1>Student login component</h1>
@@ -8,4 +8,4 @@ function Studentlogin() {
     )
 }
 
-export default Studentlogin
+export default User
