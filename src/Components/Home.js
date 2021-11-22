@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import "../App.css"
+import { NavLink } from "react-router-dom";
 import { FaUserGraduate, FaUserTie } from "react-icons/fa";
 function Home() {
   return (
@@ -16,23 +17,23 @@ export default Home;
 //Student 
 export const Student = () => {
   return (
-    <Link to="/home/user">
+    <NavLink to="/home/user" activeClassName="active">
       <div className="student">
         <FaUserGraduate className="icon" />
-        <h2 className="student-head">Student</h2>
+        <h2 className="student-head">User</h2>
       </div>
-    </Link>
+    </NavLink>
   );
 };
 
 //Admin Component
 export const Admin = () => {
   return (
-    <Link to="home/admin">
+    <NavLink to="home/admin">
       <div className="admin">
         <FaUserTie className="icon" />
         <h2 className="admin-head">Admin</h2>
       </div>
-    </Link>
+    </NavLink>
   );
 };
