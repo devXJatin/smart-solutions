@@ -6,19 +6,19 @@ function Home() {
     <div>
       <Student />
       <Admin/>
-      <div className="admin"></div>
     </div>
   );
 }
 
 export default Home;
 
+
+//Student 
 export const Student = () => {
   return (
     <Link to="/home/user">
       <div className="student">
-        {/* <FontAwesomeIcon icon={['fas', 'user-graduate']} className="student-icon" /> */}
-        <FaUserGraduate className="student-icon" />
+        <FaUserGraduate className="icon" />
         <h2 className="student-head">Student</h2>
       </div>
     </Link>
@@ -30,8 +30,7 @@ export const Admin = () => {
   return (
     <Link to="home/admin">
       <div className="admin">
-        {/* <FontAwesomeIcon icon={['fas', 'user-graduate']} className="student-icon" /> */}
-        <FaUserTie className="student-icon" />
+        <FaUserTie className="icon" />
         <h2 className="admin-head">Admin</h2>
       </div>
     </Link>

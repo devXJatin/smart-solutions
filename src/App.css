@@ -1,53 +1,67 @@
-nav{
-    background-color: rgba(0, 0, 0, 0.603);
-    display: flex;
-    height: 8.5vh;
-    justify-content: space-between;
+nav {
+  background-color: rgba(0, 0, 0, 0.603);
+  display: flex;
+  height: 58px;
+  justify-content: space-between;
 }
 
-.nav-links{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    margin-left: 130px;
-
-}
-.is-active{
-    color:black;
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-left: 130px;
 }
 
-.logo{
-    height: 150px;
-    width: 120px;
-    margin-top: -45px;
-    padding-left: 56px;
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 70px;
+
+  /* textDecoration:'none',
+    color:'white',
+    fontSize: '20px',
+    fontWeight: '500',
+    paddingLeft: '70px' */
+}
+.active {
+  color: black;
+  border-bottom: 2px solid azure;
+  border-radius: 2px;
 
 }
 
-.student{
-    /* border: 2px solid black; */
-    position: absolute;
-    top: 220px;
-    left: 400px;
-    border-radius: 100%;
+.logo {
+  height: 150px;
+  width: 120px;
+  margin-top: -45px;
+  padding-left: 56px;
+}
 
-    
+.student {
+  /* border: 2px solid black; */
+  position: absolute;
+  top: 220px;
+  left: 400px;
+  border-radius: 100%;
 }
 /* .student:hover{
     box-shadow: 0px 0px 50px red;
 } */
 
-.student-head, .admin-head{
-    text-align: center;
+.student-head,
+.admin-head {
+  text-align: center;
 }
-.student-icon{
-    font-size: 200px;
-    margin: auto;
-    color: aquamarine;
+.icon {
+  font-size: 200px;
+  margin: auto;
+  color: aquamarine;
 }
-.admin{
-    position: absolute;
-    top: 220px;
-    right: 380px;
+.admin {
+  position: absolute;
+  top: 220px;
+  right: 380px;
 }

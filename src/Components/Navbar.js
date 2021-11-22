@@ -9,22 +9,13 @@ function Navbar() {
           <img className="logo"src ={Logo}/>
       </header>
       <ul className="nav-links">
-          <NavLink to="/" style={styles.link} activeStyle={{color:"black"}} exact>Home</NavLink>
-          <NavLink to="/about" exact style={styles.link} activeClassName="is-active">About</NavLink>
-          <NavLink to="/contact" exact style={styles.link} activeClassName="is-active">Contact</NavLink>
+          <NavLink to="/?" className="link" activeClassName="active" >Home</NavLink>
+          <NavLink to="/about" className="link" activeClassName="active" >About</NavLink>
+          <NavLink to="/contact" className="link" activeClassName="active">Contact</NavLink>
       </ul>
     </nav>
   );
 }
 
-const styles={
-    link:{
-        textDecoration:'none',
-        color:'white',
-        fontSize: '20px',
-        fontWeight: '500',
-        paddingLeft: '70px'
-    },
-}
 
 export default Navbar;
