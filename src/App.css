@@ -1,8 +1,10 @@
+/* Navigation style */
 nav {
   background-color: rgba(0, 0, 0, 0.603);
   display: flex;
   height: 58px;
   justify-content: space-between;
+  
 }
 
 .nav-links {
@@ -10,9 +12,8 @@ nav {
   display: flex;
   align-items: center;
   position: absolute;
-  margin-left: 130px;
+  margin-left: 500px;
 }
-
 
 .link {
   text-decoration: none;
@@ -27,25 +28,38 @@ nav {
   border-radius: 2px;
 }
 
+header {
+  /* border: 2px solid black; */
+  margin-left: 90px;
+  cursor: pointer;
+}
 .logo {
-  height: 150px;
-  width: 120px;
-  margin-top: -45px;
-  padding-left: 56px;
+  height: 68px;
+  margin-top: -4px;
+  padding-right: 12px;
 }
 
-.student {
+.logoHeading {
   /* border: 2px solid black; */
+  padding: 3px 0px 3px 8px;
+  font-size: 24px;
+  margin-top: -58px;
+  margin-left: 62px;
+  border-left: 2px solid white;
+  font-weight: 500;
+  color: white;
+}
+/* ==========Navigation style End======= */
+
+/* ====user & admin login style====== */
+.user {
   position: absolute;
   top: 220px;
   left: 400px;
   border-radius: 100%;
 }
-/* .student:hover{
-    box-shadow: 0px 0px 50px red;
-} */
 
-.student-head,
+.user-head,
 .admin-head {
   text-align: center;
 }
@@ -59,6 +73,10 @@ nav {
   top: 220px;
   right: 380px;
 }
+
+/* =========END=========== */
+
+/* =============Login Page style=========== */
 /* login style */
 .userLogin h1 {
   font-weight: bold;
@@ -81,8 +99,8 @@ button {
   cursor: pointer;
 }
 
-button:hover{
-    background-color: #27b697da;
+button:hover {
+  background-color: #27b697da;
 }
 
 button:active {
@@ -146,3 +164,5 @@ input {
   z-index: 2;
   margin: auto;
 }
+
+/* ============END==================== */

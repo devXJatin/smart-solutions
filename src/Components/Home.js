@@ -18,9 +18,9 @@ export default Home;
 export const Student = () => {
   return (
     <NavLink to="/home/user" activeClassName="active">
-      <div className="student">
+      <div className="user">
         <FaUserGraduate className="icon" />
-        <h2 className="student-head">User</h2>
+        <h2 className="user-head">User</h2>
       </div>
     </NavLink>
   );
