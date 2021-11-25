@@ -1,11 +1,12 @@
 import React from "react";
 import "../App.css"
 import { NavLink } from "react-router-dom";
-import { FaUserGraduate, FaUserTie } from "react-icons/fa";
+import { FaUserGraduate, FaUserTie  } from "react-icons/fa";
+import Background from '../Assests/bg-img1.png'
 function Home() {
   return (
-    <div>
-      <Student />
+    <div className="bgHome">
+      <User />
       <Admin/>
     </div>
   );
@@ -15,10 +16,11 @@ export default Home;
 
 
 //Student 
-export const Student = () => {
+export const User = () => {
   return (
-    <NavLink to="/home/user" activeClassName="active">
+    <NavLink to="/home/user" className="userLink">
       <div className="user">
+
         <FaUserGraduate className="icon" />
         <h2 className="user-head">User</h2>
       </div>
@@ -29,7 +31,7 @@ export const Student = () => {
 //Admin Component
 export const Admin = () => {
   return (
-    <NavLink to="home/admin">
+    <NavLink to="home/admin" className="adminLink">
       <div className="admin">
         <FaUserTie className="icon" />
         <h2 className="admin-head">Admin</h2>
@@ -37,3 +39,4 @@ export const Admin = () => {
     </NavLink>
   );
 };
+

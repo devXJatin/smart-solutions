@@ -1,10 +1,19 @@
+/* ====Home Background==== */
+
+.bgHome {
+  background-image: url("./Assests/bg-img1.png");
+  background-position: center;
+  background-size: cover;
+  height: 92vh;
+  min-width: 100%;
+  /* background:linear-gradient(to left top, rgb(219, 234, 254), rgb(147, 197, 253), rgb(59, 130, 246)) */
+}
+
 /* Navigation style */
 nav {
   background-color: rgba(0, 0, 0, 0.603);
   display: flex;
   height: 58px;
-  justify-content: space-between;
-  
 }
 
 .nav-links {
@@ -12,7 +21,7 @@ nav {
   display: flex;
   align-items: center;
   position: absolute;
-  margin-left: 500px;
+  margin-left: 300px;
 }
 
 .link {
@@ -22,6 +31,7 @@ nav {
   font-weight: 500;
   margin-left: 70px;
 }
+
 .active {
   color: black;
   border-bottom: 2px solid azure;
@@ -30,7 +40,7 @@ nav {
 
 header {
   /* border: 2px solid black; */
-  margin-left: 90px;
+  margin-left: 80px;
   cursor: pointer;
 }
 .logo {
@@ -52,6 +62,19 @@ header {
 /* ==========Navigation style End======= */
 
 /* ====user & admin login style====== */
+
+.userLink h2,
+.adminLink h2 {
+  text-decoration: none;
+  color: white;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+.user:active,
+.admin:active {
+  transform: scale(0.95);
+}
 .user {
   position: absolute;
   top: 220px;
@@ -78,9 +101,24 @@ header {
 
 /* =============Login Page style=========== */
 /* login style */
+
+.passwordIcon, .userIcon, .adminIcon{
+  display: flex;
+  /* border: 2px solid black; */
+  /* margin-left: -48px; */
+  margin-bottom: 4px;
+}
+.passwordIcon span, .userIcon span, .adminIcon span{
+  font-size: 22px;
+  margin-top: 4px;
+  padding: 8px;
+  margin-right: 4px;
+  color: #1ca185;
+}
 .userLogin h1 {
   font-weight: bold;
   margin-bottom: 70px;
+  
 }
 
 button {
@@ -101,6 +139,7 @@ button {
 
 button:hover {
   background-color: #27b697da;
+  border: none;
 }
 
 button:active {
@@ -129,12 +168,13 @@ form {
 input {
   background-color: #eee;
   border: none;
-  padding: 12px 15px;
+  padding: 10px 52px 10px 16px;
   margin: 8px 0;
   width: 100%;
   margin-bottom: 16px;
   outline: none;
   font-size: 16px;
+  margin-right: 36px;
 }
 
 .container {
@@ -155,14 +195,15 @@ input {
   top: 0;
   height: 100%;
   transition: all 0.6s ease-in-out;
-  text-align: center;
+  /* text-align: center; */
+  /* border: 2px solid black; */
 }
 
 .sign-in-container {
   left: 0;
   width: 450px;
   z-index: 2;
-  margin: auto;
+  /* margin: auto; */
 }
 
 /* ============END==================== */
