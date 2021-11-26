@@ -16,7 +16,6 @@ function Admin() {
           </div>
           <div className="passwordIcon">
             <span>
-              {" "}
               <FaLock />
             </span>
             <input type="Password" required placeholder="Password" />
