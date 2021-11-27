@@ -11,8 +11,8 @@ function Navbar() {
       </header>
       <ul className="nav-links">
           <NavLink to="/" className="link" activeClassName="active" >Home</NavLink>
-          <NavLink to="/about" className="link" activeClassName="active" >About</NavLink>
-          <NavLink to="/contact" className="link" activeClassName="active">Contact</NavLink>
+          <NavLink to="/about" className="link" activeClassName="active" >About Us</NavLink>
+          <NavLink to="/contact" className="link" activeClassName="active">Contact Us</NavLink>
       </ul>
     </nav>
   );

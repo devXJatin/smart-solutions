@@ -1,25 +1,24 @@
-import { date } from "check-types";
 import React, { useState } from "react";
 import { FaLock, FaUser } from "react-icons/fa";
 import "../App.css";
 function User() {
-  const [users, setUsers] = useState({
+  const [user, setUser] = useState({
     userId: "",
     password: "",
   });
 
   const [records, setRecords] = useState([{}]);
 
-  const handleUser = (event) => {
+  const handleUserInput = (event) => {
     const name = event.target.name;
     const value = event.target.value;
-    setUsers({ ...users, [name]: value });
+    setUser({ ...user, [name]: value });
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const newRecords = { ...users, id: new Date().getTime().toString() };
-    setRecords([...records, {newRecords}]);
+    const newRecords = { ...user, id: new Date().getTime().toString() };
+    setRecords([...records, {newRecords}]);  setUser({userId: "", password:""});
   };
   console.log(records);
   return (
@@ -38,8 +37,8 @@ function User() {
               autoComplete="off"
               name="userId"
               id="userid"
-              value={users.email}
-              onChange={handleUser}
+              value={user.userId}
+              onChange={handleUserInput}
             />
           </div>
           <div className="passwordIcon">
@@ -51,9 +50,9 @@ function User() {
               name="password"
               id="password"
               required
-              value={users.password}
+              value={user.password}
               placeholder="Password"
-              onChange={handleUser}
+              onChange={handleUserInput}
             />
           </div>
           <button type="submit">Log in</button>
