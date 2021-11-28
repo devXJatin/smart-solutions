@@ -29,10 +29,11 @@ function Admin() {
         <form className="userLogin" onSubmit={handleSubmit}>
           <h1>Admin</h1>
           <div className="adminIcon">
-            <span>
+            <span className="inputIcon">
               <FaUser />
             </span>
             <input
+            className="loginInput"
               type="text"
               required
               placeholder="Admin ID"
@@ -44,10 +45,11 @@ function Admin() {
             />
           </div>
           <div className="passwordIcon">
-            <span>
+            <span className="inputIcon">
               <FaLock />
             </span>
             <input
+            className="loginInput"
               type="Password"
               required
               placeholder="Password"
@@ -58,7 +60,7 @@ function Admin() {
               onChange={handleAdminInput}
             />
           </div>
-          <button type="submit">Log in</button>
+          <button type="submit" className="submit">Log in</button>
         </form>
       </div>
     </div>

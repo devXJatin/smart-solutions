@@ -27,10 +27,11 @@ function User() {
         <form className="userLogin" onSubmit={handleSubmit}>
           <h1>User</h1>
           <div className="userIcon">
-            <span>
+            <span className="inputIcon">
               <FaUser />
             </span>
             <input
+            className="loginInput"
               type="text"
               required
               placeholder="User ID"
@@ -42,10 +43,11 @@ function User() {
             />
           </div>
           <div className="passwordIcon">
-            <span>
+            <span className="inputIcon">
               <FaLock />
             </span>
             <input
+            className="loginInput"
               type="Password"
               name="password"
               id="password"
@@ -55,7 +57,7 @@ function User() {
               onChange={handleUserInput}
             />
           </div>
-          <button type="submit">Log in</button>
+          <button type="submit" className="submit">Log in</button>
         </form>
       </div>
     </div>
