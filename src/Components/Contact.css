@@ -3,7 +3,7 @@ section {
   justify-content: center;
   align-items: center;
   min-height: 91vh;
-  background: url("../Assests/Contact/bg-contact.jpg");
+  background: url("../Assets/Contact/bg-contact.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -96,6 +96,8 @@ section .contain .containerInfo .info li:hover span:nth-child(2){
 section .contain .containerInfo .socialLinks{
   position:relative;
   display: flex;
+  justify-content: space-around;
+  margin-right: 70px;
 }
 
 section .contain .containerInfo .socialLinks li{
