@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import { FaLock, FaUser } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "../App.css";
 function User() {
+
+    const navigate = useNavigate();
+
   const [user, setUser] = useState({
-    userId: "",
+    email: "",
     password: "",
   });
 
-  const [records, setRecords] = useState([{}]);
 
   const handleUserInput = (event) => {
     const name = event.target.name;
@@ -16,17 +18,33 @@ function User() {
     setUser({ ...user, [name]: value });
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async(event) => {
     event.preventDefault();
-    const newRecords = { ...user, id: new Date().getTime().toString() };
-    setRecords([...records, {newRecords}]);  setUser({userId: "", password:""});
+
+    const{email, password} = user;
+
+    const response = await fetch('/login',{
+        method:"POST",
+        headers:{
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify({email, password})
+    })
+
+    const data = response.json();
+    if(data.status === 400 || !data){
+        window.alert("Invalid Credentials");
+    }
+
+    window.alert("Login Successfully")
+    navigate('/dashboard');
   };
-  console.log(records);
+  
   return (
     <div>
     <div className="container">
       <div className="form-container sign-in-container">
-        <form className="userLogin" onSubmit={handleSubmit}>
+        <form method="POST"className="userLogin" onSubmit={handleSubmit}>
           <h1>User</h1>
           <div className="userIcon">
             <span className="inputIcon">
@@ -36,11 +54,11 @@ function User() {
             className="loginInput"
               type="text"
               required
-              placeholder="User ID"
+              placeholder="Email"
               autoComplete="off"
-              name="userId"
-              id="userid"
-              value={user.userId}
+              name="email"
+              id="email"
+              value={user.email}
               onChange={handleUserInput}
             />
           </div>

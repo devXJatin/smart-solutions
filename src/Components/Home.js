@@ -2,7 +2,6 @@ import React from "react";
 import "../App.css";
 import { NavLink } from "react-router-dom";
 import { FaUserGraduate, FaUserTie } from "react-icons/fa";
-import Background from "../Assets/bg-img1.png";
 function Home() {
   return (
     <div className="bgHome">

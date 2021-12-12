@@ -13,6 +13,9 @@ function Navbar() {
           <NavLink to="/" className="link" activeClassName="active" >Home</NavLink>
           <NavLink to="/about" className="link" activeClassName="active" >About Us</NavLink>
           <NavLink to="/contact" className="link" activeClassName="active">Contact Us</NavLink>
+          <NavLink to="/login" className="link" activeClassName="active">Log In</NavLink>
+          <NavLink to="/logout" className="link" activeClassName="active">Logout</NavLink>
+          <NavLink to="/signup" className="link" activeClassName="active">Signup</NavLink>
       </ul>
     </nav>
   );

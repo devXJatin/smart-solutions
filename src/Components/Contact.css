@@ -1,4 +1,4 @@
-section {
+.contactSection {
   position: relative;
   justify-content: center;
   align-items: center;
@@ -7,7 +7,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
-section::before{
+.contactSection::before{
   position: absolute;
   content: "";
   top: 0;
@@ -17,7 +17,7 @@ section::before{
   background: rgba(0, 0, 0, 0.726);
 }
 
-section .contain{
+.contactSection .contain{
   min-height: 560px ;
   min-width: 100%;
   display: flex;
@@ -26,7 +26,7 @@ section .contain{
   position: relative;
 }
 
-section .contain .containerInfo{
+.contactSection .contain .containerInfo{
   position: absolute;
   top: 50px;
   left: 150px;
@@ -42,18 +42,18 @@ section .contain .containerInfo{
   /* border: 2px solid black; */
 }
 
-section .contain .containerInfo h2{
+.contactSection .contain .containerInfo h2{
   color: #fff;
   font-size: 24px;
   font-weight: 500;
 }
 
-section .contain .containerInfo .info{
+.contactSection .contain .containerInfo .info{
   position: relative;
   margin: 20px 0;
 }
 
-section .contain .containerInfo .info li{
+.contactSection .contain .containerInfo .info li{
   position: relative;
   list-style: none;
   display: flex;
@@ -62,19 +62,19 @@ section .contain .containerInfo .info li{
   align-items: flex-start;
 }
 
-section .contain .containerInfo .info li span:nth-child(1){
+.contactSection .contain .containerInfo .info li span:nth-child(1){
   width: 30px;
   min-width: 30px;
 
 }
 
-section .contain .containerInfo .info li span:nth-child(1) img{
+.contactSection .contain .containerInfo .info li span:nth-child(1) img{
   max-width: 100%;
   filter: invert(1);
   opacity: 0.7;
 }
 
-section .contain .containerInfo .info li span:nth-child(2){
+.contactSection .contain .containerInfo .info li span:nth-child(2){
   color: #fff;
   margin-left: 10px;
   font-weight: 300;
@@ -82,41 +82,41 @@ section .contain .containerInfo .info li span:nth-child(2){
  
  }
 
- section .contain .containerInfo .info li span:nth-child(2) img{
+ .contactSection .contain .containerInfo .info li span:nth-child(2) img{
   max-width: 100%;
   filter: invert(1);
   /* opacity: 0.5; */
 }
 
-section .contain .containerInfo .info li:hover span:nth-child(1) img,
-section .contain .containerInfo .info li:hover span:nth-child(2){
+.contactSection .contain .containerInfo .info li:hover span:nth-child(1) img,
+.contactSection .contain .containerInfo .info li:hover span:nth-child(2){
   opacity: 1;
 }
 
-section .contain .containerInfo .socialLinks{
+.contactSection .contain .containerInfo .socialLinks{
   position:relative;
   display: flex;
   justify-content: space-around;
   margin-right: 70px;
 }
 
-section .contain .containerInfo .socialLinks li{
+.contactSection .contain .containerInfo .socialLinks li{
   list-style: none;
   margin-right: 15px;
 }
 
-section .contain .containerInfo .socialLinks li a{
+.contactSection .contain .containerInfo .socialLinks li a{
   text-decoration: none;
 }
 
-section .contain .containerInfo .socialLinks li a img{
+.contactSection .contain .containerInfo .socialLinks li a img{
   filter: invert(1);
   opacity: 0.7;
   margin-left: 40px;
   margin-top: 20px
 }
 
-section .contain .containerInfo .socialLinks li:hover a img{
+.contactSection .contain .containerInfo .socialLinks li:hover a img{
   opacity: 1;
   color: #fff;
 }
@@ -146,7 +146,7 @@ section .contain .containerInfo .socialLinks li:hover a img{
   margin-top: 20px;
 }
 
-section .contain .contactForm h2{
+.contactSection .contain .contactForm h2{
   color: #283f50;
   z-index: 999;
   font-size: 24px;
@@ -154,7 +154,7 @@ section .contain .contactForm h2{
   padding-bottom: 10px;
 }
 
-section .contain .contactForm .formBox{
+.contactSection .contain .contactForm .formBox{
   position: relative;
   display: flex;
   /* flex-direction: column; */
@@ -163,22 +163,22 @@ section .contain .contactForm .formBox{
   padding-top: 5px;
 }
 
-section .contain .contactForm .formBox .inputBox{
+.contactSection .contain .contactForm .formBox .inputBox{
   position: relative;
   margin: 0 0 15px 0;
 }
 
-section .contain .contactForm .formBox .inputBox .w50{
+.contactSection .contain .contactForm .formBox .inputBox .w50{
   width: 100%;
 }
 
-section .contain .contactForm .formBox .inputBox .w100{
+.contactSection .contain .contactForm .formBox .inputBox .w100{
   width: 100%;
   
 }
 
-section .contain .contactForm .formBox .inputBox .contactInput,
-section .contain .contactForm .formBox .inputBox textarea{
+.contactSection .contain .contactForm .formBox .inputBox .contactInput,
+.contactSection .contain .contactForm .formBox .inputBox textarea{
   width: 100% !important;
   padding: 5px 0;
   font-size: 18px;
@@ -191,25 +191,25 @@ section .contain .contactForm .formBox .inputBox textarea{
 
 }
 
-section .contain .contactForm .formBox .inputBox textarea{
+.contactSection .contain .contactForm .formBox .inputBox textarea{
   min-height: 100px;
 }
 
-section .contain .contactForm .formBox .inputBox .inputLabel{
+.contactSection .contain .contactForm .formBox .inputBox .inputLabel{
  
   position: relative;
   left: 0;
-  padding: 5px 0;
-  font-size: 18px;
+  padding: 4px 0;
+  font-size: 16px;
   font-weight: 300;
-  color: #333;
+  color: #0f3959;
   transition: 0.5s;
   pointer-events: none;
 }
-section .contain .contactForm .formBox .inputBox input:focus ~ span,
-section .contain .contactForm .formBox .inputBox textarea:focus ~ span,
-section .contain .contactForm .formBox .inputBox input:valid ~ span,
-section .contain .contactForm .formBox .inputBox textarea:valid ~ span{
+.contactSection .contain .contactForm .formBox .inputBox input:focus ~ span,
+.contactSection .contain .contactForm .formBox .inputBox textarea:focus ~ span,
+.contactSection .contain .contactForm .formBox .inputBox input:valid ~ span,
+.contactSection .contain .contactForm .formBox .inputBox textarea:valid ~ span{
   transform: translateY(-20px);
   font-size: 400;
   font-weight: 400;
@@ -225,17 +225,22 @@ section .contain .contactForm .formBox .inputBox textarea:valid ~ span{
   color: #1e33ec;
 } */
 
-section .contain .contactForm .formBox .inputBox .submitButton{
+.contactSection .contain .contactForm .formBox .inputBox .submitButton{
   position: relative;
   cursor: pointer;
   background: #0f3959;
   color: rgba(255, 255, 255, 0.76);
   border: none;
   max-width: 150px;
-  padding: 12px 22px;
+  padding: 12px 36px;
   border-radius: 20px;
+  font-size: 18px;
 }
-section .contain .contactForm .formBox .inputBox .submitButton:hover{
+.contactSection .contain .contactForm .formBox .inputBox .submitButton:hover{
   color: #fff;
   
+}
+
+.submitButton:active{
+  transform: scale(0.95);
 }

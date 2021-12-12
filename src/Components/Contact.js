@@ -32,19 +32,30 @@ function Contact() {
   //Handle Submit button
   const handleContactSubmit = async (event) => {
     event.preventDefault();
-    const newRecord = { ...contacts, id: new Date().getTime().toString() };
-    setContactRecords(...contactRecords, { newRecord });
-    await addDoc(contactCollectionRef,newRecord);
-    setContacts({
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
+
+     
+    const {name, email, phone, message} = contacts;
+
+    const response = await fetch("/contact",{
+        method:"POST",
+        headers:{
+            "Content-Type":"application/json"
+        },
+        body: JSON.stringify({name, email, phone, message})
+       
     });
+
+    const data = await response.json();
+    if(data.status === 422 || !data){
+        window.alert("Not Send");
+        console.log("Invalid Registration")
+    }
+
+    window.alert("Send Successfully");
   };
   console.log(contactRecords);
   return (
-    <section>
+    <section className="contactSection">
       <div className="contain">
         <div className="containerInfo">
           <div>
@@ -54,19 +65,19 @@ function Contact() {
                 <span>
                   <img src={location} alt="location" />
                 </span>
-                <span>mathura,Uttar Pradesh</span>
+                <span>Banglore, Karnataka</span>
               </li>
               <li>
                 <span>
                   <img src={email} alt="" />
                 </span>
-                <span>lorem@gmail.com</span>
+                <span>contactus@smart-solutions.com</span>
               </li>
               <li>
                 <span>
                   <img src={phone} alt="" />
                 </span>
-                <span>1234567898</span>
+                <span>080-2668-3175</span>
               </li>
             </ul>
           </div>

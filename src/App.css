@@ -3,6 +3,7 @@
 .App {
   background: url("./Assets/bg-landingPage.jpg");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .App::before {
@@ -10,8 +11,8 @@
   content: "";
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+ height: 100%;
+ width: 100%;
   background: rgba(0, 0, 0, 0.856);
 }
 
@@ -28,12 +29,12 @@
 
 /* Navigation style */
 nav {
-  /* background-color: rgba(0, 0, 0, 0.603); */
-  background: transparent;
+  background-color: rgba(0, 0, 0, 0.603);
+  /* background: transparent; */
   display: flex;
   height: 58px;
   justify-content: space-between;
-  padding-top: 4px;
+  padding-top: 3px;
 }
 
 .nav-links {
@@ -43,7 +44,7 @@ nav {
   position: relative;
   top: 0;
   right: 0;
-  margin-right: 300px;
+  margin-right: 130px;
 }
 
 .link {
@@ -51,7 +52,7 @@ nav {
   color: white;
   font-size: 19px;
   font-weight: 500;
-  margin-left: 70px;
+  margin-left: 50px;
   font-family: 'Playfair Display', serif;
   letter-spacing: 0.5px;
 }
@@ -81,7 +82,7 @@ header {
   padding: 3px 0px 3px 8px;
   font-size: 24px;
   margin-top: -58px;
-  margin-left: 52px;
+  margin-left: 48px;
   border-left: 2px solid white;
   font-weight: 500;
   color: white;
@@ -151,17 +152,18 @@ header {
   margin-top: 6px;
   padding: 8px;
   margin-right: 2px;
-  color: #1ca185;
+  color: #0f3959;
 }
 .userLogin h1 {
   font-weight: bold;
-  margin-bottom: 70px;
+  margin-top: 110px;
+  margin-bottom: 50px;
 }
 
 .submit {
   border-radius: 30px;
   border: 1px solid #000000;
-  background-color: #1ca185;
+  background-color: #0f3959;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
@@ -175,7 +177,7 @@ header {
 }
 
 .submit:hover {
-  background-color: #27b697da;
+  background-color: #0f3959;
   border: none;
 }
 
@@ -203,7 +205,7 @@ form {
 }
 
 .loginInput {
-  background-color: #eee;
+  background-color: rgb(202, 199, 199);
   border: none;
   padding: 12px 52px 12px 18px;
   margin: 8px 0;
@@ -223,8 +225,8 @@ form {
   overflow: hidden;
   width: 600px;
   max-width: 450px;
-  min-height: 480px;
-  top: 130px;
+  min-height: 580px;
+  top: 80px;
   left: 550px;
 }
 
