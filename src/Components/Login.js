@@ -28,16 +28,19 @@ function User() {
         headers:{
             "Content-Type":"application/json"
         },
-        body:JSON.stringify({email, password})
+        body:JSON.stringify({
+          email, password
+        })
     })
 
     const data = response.json();
     if(data.status === 400 || !data){
         window.alert("Invalid Credentials");
-    }
+    }else{
+      window.alert("Login Successfully")
+      navigate('/dashboard');
 
-    window.alert("Login Successfully")
-    navigate('/dashboard');
+   }
   };
   
   return (

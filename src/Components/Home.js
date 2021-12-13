@@ -4,10 +4,19 @@ import { NavLink } from "react-router-dom";
 import { FaUserGraduate, FaUserTie } from "react-icons/fa";
 function Home() {
   return (
-    <div className="bgHome">
-      <User />
-      <Admin/>
-    </div>
+      <div className="home">
+        <div className="headings">
+        <h1 className="heading1">Welcome To The</h1>
+        <h1 className="heading2"> Smart Solutions</h1>
+        </div>
+      </div>
+
+    //   <div class="wrapper">
+    // <div class="static-txt">Welcome To The </div>
+    // <ul class="dynamic-txts">
+    //   <li><span>Smart Solutions</span></li>
+    //   </ul>
+    // </div>
   );
 }
 

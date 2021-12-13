@@ -9,11 +9,10 @@ function About() {
                         <h1>About Us</h1>
                     </div>
                     <div className="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat.</p>
-
+                        <p>Let's face it. Most people hate the software they use at work.</p>
+                        <p>Business software is clunky, expensive, hard to setup and frustating to use. Countless hours are wasted trying to customize these solutions and they often require expensive professional services to get everything at work.
+In the end the solution becomes so complex that businesses need to hire full time employees to babysit the software.</p>
+<p>At Smart Solutions, we believe your business deserves better software - software that's ready to go, easy to setup and use and require minimal customization. All of our products live up to this promise and are backed by our world-class support. And the best part is, you don't have to break the bank to get them working.</p>
                     </div>
 
                 </div>
