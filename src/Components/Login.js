@@ -48,7 +48,7 @@ function User() {
     <div className="container">
       <div className="form-container sign-in-container">
         <form method="POST"className="userLogin" onSubmit={handleSubmit}>
-          <h1>User</h1>
+          <h1>Login</h1>
           <div className="userIcon">
             <span className="inputIcon">
               <FaUser />
